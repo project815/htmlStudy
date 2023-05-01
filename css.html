@@ -8,11 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - My first website</title>
     <style>
+      * {
+        border: 2px dashed greenyellow;
+      }
       html {
         background-color: tomato;
       }
       body {
-        margin: 0px;
+        padding: 30px;
         background-color: cyan;
       }
       h1 {
@@ -27,13 +30,34 @@
         text-align: center;
       }
       div {
-        margin: 50px 50px;
-        height: 100px;
-        width: 100px;
+        padding: 10px;
+        height: 250px;
+        width: 250px;
         background-color: white;
       }
+      #first {
+        background-color: red;
+        height: 220px;
+        width: 220px;
+      }
+      #second {
+        background-color: blue;
+        height: 160px;
+        width: 160px;
+      }
+      #thrid {
+        background-color: yellowgreen;
+        height: 120px;
+        width: 120px;
+      }
+      #fourth {
+        background-color: royalblue;
+        height: 70px;
+        width: 70px;
+      }
       span {
-        background-color: aqua;
+        border-style: solid;
+        /* background-color: aqua; */
       }
     </style>
     <link href="style.css" rel="stylesheet" />
@@ -48,7 +72,13 @@
       <mark>안녕하세요</mark>
     </main>
     <footer>&copy : 2020 N.C</footer> -->
-    <div></div>
+    <div id="first">
+      <div id="second">
+        <div id="thrid">
+          <div id="fourth"><span>hello!</span></div>
+        </div>
+      </div>
+    </div>
     <!-- <span>hello</span>
     <span>hello</span>
     <span>hello</span>

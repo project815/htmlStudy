@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="en">
   <head>
     <link
       rel="shortcut icon"
@@ -25,11 +25,32 @@
     <div>
       <audio
         controls="enable"
-        autoplay="true"
         src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
       ></audio>
     </div>
-
-    <dialog open><p>안녕하세여 여러분!!!</p></dialog>
+    <hr />
+    <form>
+      <div>
+        <label for="profile">Profile Photo</label>
+        <input id="profile" type="file" accept=".jpg, .pdf" />
+      </div>
+      <div>
+        <label for="frist-name">FirstName</label>
+        <input id="frist-name" required placeholder="Name" type="text" />
+      </div>
+      <p>
+        <input type="color" />
+        <input required placeholder="LastName" type="text" />
+        <input required placeholder="UserName" minlength="10" type="text" />
+        <input required placeholder="Password" type="password" />
+        <input required type="submit" value="Create Account" />
+      </p>
+    </form>
+    <hr />
+    <form>
+      <label for="type">TYPE : </label>
+      <input id="type" type="date" />
+      <input type="submit" value="CreateAccout" />
+    </form>
   </body>
 </html>

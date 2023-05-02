@@ -10,34 +10,29 @@
     <style>
       body {
         height: 1000vh;
-        margin: 20px;
+        margin: 50px;
       }
       div {
         color: white;
         background-color: aqua;
         width: 200px;
         height: 200px;
+        position: relative;
       }
-      #different {
-        top: 3px;
-        left: 200px;
-        position: fixed;
-        background-color: darksalmon;
-        width: 250px;
-      }
-      #different2 {
-        top: 100px;
-        left: 250px;
-        position: fixed;
-        background-color: aqua;
-        width: 250px;
+      .green {
+        background-color: brown;
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        /* top: -10px; */
+        bottom: 0px;
+        left: 0px;
       }
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="different2">s</div>
-
-    <div id="different">s</div>
+    <div>
+      <div class="green"></div>
+    </div>
   </body>
 </html>

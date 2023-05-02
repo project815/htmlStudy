@@ -10,13 +10,20 @@
     <style>
       body {
         /* height: 200px; */
-        /* height: 100vh; */
+        height: 100vh;
         margin: 20px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: row-reverse;
+
+        justify-content: space-around;
         align-items: center;
       }
       div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
         /* display: inline-block; */
         background-color: blue;
         height: 200px;
@@ -28,9 +35,9 @@
     </style>
   </head>
   <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+    <div>4</div>
   </body>
 </html>

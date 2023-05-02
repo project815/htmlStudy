@@ -27,6 +27,24 @@
       p + span {
         background-color: red;
       }
+      p ~ span {
+        background-color: green;
+      }
+
+      input:required {
+        border: 1px solid tomato;
+      }
+
+      input[type="password"] {
+        background-color: red;
+      }
+      /* 
+      input[placeholder="username"] {
+        background-color: cornflowerblue;
+      } */
+      input[placeholder~="name"] {
+        background-color: yellow;
+      }
     </style>
   </head>
   <body>
@@ -40,7 +58,14 @@
         pellentesque et eros et gravida. Aenean non risus euismod, dapibus diam
         nec, <span>gravida lectus.</span>
       </p>
+      <address></address>
       <span>Hello</span>
+
+      <form>
+        <input type="text" placeholder="frist-name" />
+        <input type="text" placeholder="last name" />
+        <input required type="password" placeholder="password" />
+      </form>
     </div>
   </body>
 </html>

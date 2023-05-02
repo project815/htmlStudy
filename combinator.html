@@ -1,0 +1,46 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      span {
+        background-color: yellowgreen;
+        color: tomato;
+        padding: 2px;
+        border-radius: 10px;
+      }
+      div p span {
+        color: white;
+      }
+      div > span {
+        text-decoration: underline;
+      }
+      p + span {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span> hello </span>
+      <p>
+        <span> hello </span>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        pellentesque et eros et gravida. Aenean non risus euismod, dapibus diam
+        nec, <span>gravida lectus.</span>
+      </p>
+      <span>Hello</span>
+    </div>
+  </body>
+</html>

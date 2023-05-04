@@ -1,0 +1,93 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --main-color: #727065;
+      --default-border: 1px solid var(--main-color);
+    }
+    button:focus {
+      background-color: tomato;
+    }
+    input:focus {
+      background-color: tomato;
+    }
+    a:visited {
+      color: tomato;
+    }
+    a:hover {
+      color: turquoise;
+    }
+    a:focus {
+      color: turquoise;
+    }
+    /* form {
+      border: 1px solid salmon;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+    form:focus-within {
+      border-color: blue;
+    } */
+    form {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+    }
+    form:focus-within {
+      border-color: blue;
+      padding: 20px;
+    }
+    form:hover input:focus {
+      background-color: sienna;
+    }
+    input::placeholder {
+      color: blueviolet;
+    }
+    p::selection {
+      padding: 30px;
+      background-color: blueviolet;
+      color: aliceblue;
+    }
+    p::first-line {
+      font-size: 50px;
+    }
+    p {
+      background-color: var(--main-color);
+    }
+    div {
+      width: 40px;
+      height: 40px;
+      /* border: 1px solid red; */
+      border: var(--default-border);
+    }
+  </style>
+  <body>
+    <a href="https://apple.com">Go to Apple</a>
+    <div>
+      <button>Hello</button>
+      <input type="text" placeholder="Name" />
+
+      <input type="text" />
+    </div>
+
+    <form>
+      <input type="text" name="" id="" placeholder="Name" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form>
+    <p>
+      sfdfslkmfklsa dskf ksjkl kasdkfnsld ksjar ksjjkfhaskj jsr
+      .kwejkaejblkehlktae sdsksfblksdfjsk nkfnaso jflksadnfjkansd kfl
+    </p>
+    <div></div>
+  </body>
+</html>

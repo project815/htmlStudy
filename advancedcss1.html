@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        @keyframes superSexyCoinFlip{
+            from {
+                transform:rotateX(0);
+
+            }
+            to{
+                transform:rotateX(360deg);
+            }
+        }
+
       a {
         color: wheat;
         background-color: tomato;
@@ -15,16 +25,34 @@
         padding: 3px 5px;
         border-radius: 20px;
         font-size: 100px;
-        transition: all 1s ease-in-out;
+        transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
       }
       a:hover {
         border-radius: 30px;
         color: tomato;
         background: wheat;
       }
+      div {
+        margin: 10px;
+      }
+      img {
+        border: 5px solid black;
+        border-radius: 10%;
+        transform: rotateY(10deg) rotateX(10deg) rotateZ(10deg) scale(1.2)
+          translateX(300px) translateY(10px) skew(10deg);
+        transition: all 5s ease-in-out;
+      }
+      img:hover{
+        transform: rotateX(460deg);
+      }
     </style>
   </head>
   <body>
     <a href="#">Go Home </a>
+    <div>
+      <img src="/img/logo.jpg" />
+      <
+    </div>
+    <p>안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용안녕하세용</pa>
   </body>
 </html>
